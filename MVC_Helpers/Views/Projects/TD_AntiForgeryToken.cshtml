@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "TD_AntiForgeryToken";
+}
+
+<h2>TD_AntiForgeryToken</h2>
+
+@using (Html.BeginForm("TD_AntiForgeryToken_Action","Projects"))
+{
+    @Html.AntiForgeryToken()
+    <input type="submit" />
+}

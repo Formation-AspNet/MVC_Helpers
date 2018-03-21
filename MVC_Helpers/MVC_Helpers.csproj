@@ -211,6 +211,8 @@
     <Content Include="Views\Students\Edit.cshtml" />
     <Content Include="Views\Students\Index.cshtml" />
     <Content Include="Views\Projects\TD_Beginform.cshtml" />
+    <Content Include="Views\Projects\TD_AntiForgeryToken.cshtml" />
+    <Content Include="Views\Projects\TD_AntiForgeryToken_Action.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -48,7 +48,9 @@ namespace MVC_Helpers.Controllers
         // plus de détails, voir  https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "StudentId,StringData,IntData,BoolData,DateTimeData,GroupId")] Student student)
+        public ActionResult Create(
+            [Bind(Include = "StudentId,StringData,IntData,BoolData,DateTimeData,GroupId")]
+        Student student)
         {
             if (ModelState.IsValid)
             {

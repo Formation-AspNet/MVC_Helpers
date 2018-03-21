@@ -20,6 +20,18 @@ namespace MVC_Helpers.Controllers
             return View();
         }
 
+        // TD - EditorForm
+        public ActionResult TD_AntiForgeryToken()
+        {
+            return View();
+        }
+
+        [ValidateAntiForgeryToken]
+        public ActionResult TD_AntiForgeryToken_Action()
+        {
+            return View();
+        }
+
 
     }
 }
