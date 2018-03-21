@@ -1,0 +1,19 @@
+﻿@model MVC_Helpers.Models.Project
+
+<h2>TD_EditorFor</h2>
+
+@using (Html.BeginForm("ShowProject", "Projects"))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.LabelFor(model => model.Name)
+
+    @Html.Editor("Name")
+    @Html.EditorFor(model => model.Name)
+    @Html.EditorFor(model => model.Name, 
+                 new { htmlAttributes = new { @class = "form-control" } })
+
+    <input type="submit" />
+}
+
+

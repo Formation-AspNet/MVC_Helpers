@@ -1,0 +1,17 @@
+﻿@model MVC_Helpers.Models.Project
+@{
+    ViewBag.Title = "TD_Label";
+}
+
+<h2>TD_Label</h2>
+
+@using (Html.BeginForm("ShowProject", "Projects"))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.Label("Name", "Nom :")
+
+    @Html.LabelFor(model => model.Name)
+
+    <input type="submit" />
+}

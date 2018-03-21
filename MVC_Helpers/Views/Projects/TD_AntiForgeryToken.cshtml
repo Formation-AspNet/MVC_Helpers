@@ -4,8 +4,9 @@
 
 <h2>TD_AntiForgeryToken</h2>
 
-@using (Html.BeginForm("TD_AntiForgeryToken_Action","Projects"))
+@using (Html.BeginForm("ShowProject","Projects"))
 {
     @Html.AntiForgeryToken()
+
     <input type="submit" />
 }

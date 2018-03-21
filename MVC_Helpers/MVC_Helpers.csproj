@@ -213,6 +213,8 @@
     <Content Include="Views\Projects\TD_Beginform.cshtml" />
     <Content Include="Views\Projects\TD_AntiForgeryToken.cshtml" />
     <Content Include="Views\Projects\TD_AntiForgeryToken_Action.cshtml" />
+    <Content Include="Views\Projects\TD_EditorFor.cshtml" />
+    <Content Include="Views\Projects\TD_Label.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
