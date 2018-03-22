@@ -50,10 +50,32 @@ namespace MVC_Helpers.Controllers
             return View(project);
         }
 
+        // TD DropDownList
+        public ActionResult TD_DropDownList()
+        {
+            List<Project> ls_project = new List<Project>();
+            for (int i = 0; i < 10; i++)
+            {
+                ls_project.Add(new Project() {
+                    Name = "Project " + i,
+                    ProjectId = i
+                });
+            }
+            Task task = new Task();
+            task.Name = "Task1";
+            task.Project = ls_project.Last();
+            task.ProjectId = 9;
+
+            ViewBag.ProjectId = new SelectList(
+                ls_project, "ProjectId", "Name", task.ProjectId);
+            return View(task);
+        }
+
 
 
         public ActionResult ShowProject()
         {
+            
             return View();
         }
 

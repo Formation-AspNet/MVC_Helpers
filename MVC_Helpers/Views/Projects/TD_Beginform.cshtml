@@ -7,8 +7,12 @@
 <h2>Création d'un projet</h2>
 
 @using (Html.BeginForm()) { }
+
 @using (Html.BeginForm(new { user = "1" })) { }
+
 @using (Html.BeginForm("Create", "Projects", FormMethod.Get)) { }
+<form action="/Projects/Create" method="get"></form>
+
 @using (Html.BeginForm("Create", "Projects", FormMethod.Get,new { id="form1",@class="form1"})) { }
 
 
